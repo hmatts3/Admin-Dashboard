@@ -1,7 +1,12 @@
+body {
+    width: 70%;
+    margin: auto;
+    height: 100%;
+}
+
 .wholepage {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    gap:10px;
 }
 
 
@@ -19,30 +24,54 @@
 
 .header .top, .header .bottom{
     display: flex;
+    justify-content: space-between;
 }
+
+
 
 .maincontent {
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
+    background-color: darkgray;
+}
+
+.leftside {
+    padding: 20px;
+}
+
+.cardsTitle {
+    grid-row: 1/2;
 }
 
 .maincontent .cards {
+    grid-row: 2/3;
     grid-column: 1/2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: white;
+    padding-bottom: 20px;
 }
 
 .maincontent .rightside {
     display: grid;
     grid-column: 2/3;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 4fr 5fr;
+    padding-bottom: 20px;
 }
 
 .maincontent .rightside .announcements {
     grid-row: 1/2;
+    padding-top: 20px;
 }
 
 .maincontent .rightside .trending {
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 
@@ -50,9 +79,14 @@
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 4fr 5fr;
+    background-color:cornflowerblue;
+    color: white;
 }
 
-
+.announcementsBox, .trendingBox {
+    background: white;
+    
+}
 
 
 
