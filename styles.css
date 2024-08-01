@@ -83,10 +83,14 @@ body {
     color: white;
 }
 
+.navitem {
+    padding: 5px 0;
+}
+
 .sidebar img {
     width:20px;
     height:20px;
-    padding-right: 5px;
+    padding: 0 5px;
 }
 
 .announcementsBox, .trendingBox {
