@@ -1,3 +1,6 @@
+
+/* WHOLE PAGE */
+
 body {
     width: 70%;
     margin: auto;
@@ -10,11 +13,12 @@ body {
 }
 
 
-
 .wholepage .rightside {
     display: grid;
     grid-template-rows: 1fr 6fr;
 }
+
+/* HEADER */
 
 .header {
     grid-row: 1 / 2;
@@ -27,7 +31,16 @@ body {
     justify-content: space-between;
 }
 
+button {
+  background-color: rgb(20, 141, 255);
+  border-radius: 14px;
+  color: white;
+  padding: 4px;
+  font-size: large;
+}
 
+
+/* CARDS */
 
 .maincontent {
     grid-row: 2 / 3;
@@ -49,14 +62,20 @@ body {
     grid-column: 1/2;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-top: 20px;
+    gap: 24px;
+    margin-top: 10px;
 }
 
 .card {
     background-color: white;
     padding-bottom: 20px;
+    height:150px;
+    box-shadow: 5px 5px 5px gray;
+    border-radius: 10px;
+    border-left:rgb(255, 196, 0) solid 8px;
+    padding: 20px 10px;
 }
+
 
 .maincontent .rightside {
     display: grid;
@@ -75,16 +94,22 @@ body {
 }
 
 
+/* SIDEBAR */
 
 .sidebar {
     display: grid;
     grid-template-rows: 1fr 4fr 5fr;
     background-color:rgb(20, 141, 255);
     color: white;
+    padding-left: 20px;
 }
 
 .navitem {
-    padding: 5px 0;
+    padding: 10px 0;
+}
+
+.navitem img {
+  padding-right: 20px !important;
 }
 
 .sidebar img {
@@ -99,13 +124,19 @@ body {
 }
 
 
+
+
+
+
+
+
 .lato-thin {
     font-family: "Lato", sans-serif;
     font-weight: 100;
     font-style: normal;
   }
   
-  .lato-light {
+  .lato-light, .cardtext {
     font-family: "Lato", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -115,6 +146,7 @@ body {
     font-family: "Lato", sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: larger;
   }
   
   .lato-bold {
