@@ -14,8 +14,8 @@ body {
 
 
 .wholepage .rightside {
-    display: grid;
-    grid-template-rows: 1fr 6fr;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
 }
 
 /* HEADER */
@@ -63,7 +63,6 @@ button {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    margin-top: 10px;
 }
 
 .card {
@@ -76,22 +75,48 @@ button {
     padding: 20px 10px;
 }
 
-
+/* MAINCONTENT RIGHTSIDE */
 .maincontent .rightside {
+  padding-top: 20px;
+  /* display: grid;
+  grid-template-rows: 1fr 1fr; */
+}
+
+
+.announcementsBox, .trendingBox {
+  background: white;
+  height:40%;
+  width:90%;
+  margin: auto 5px auto 0;
+  
+}
+
+.announcements, .trending {
+background-color: rgb(236, 236, 236);
+height: max-content;
+}
+
+.cardsTitle, .announcements, .trending {
+  padding-bottom: 10px;
+}
+
+
+
+/* .maincontent .rightside {
     display: grid;
     grid-column: 2/3;
     grid-template-rows: 1fr 4fr 1fr 4fr;
     padding-bottom: 20px;
-}
+} */
 
-.maincontent .rightside .announcements {
+/* .maincontent .rightside .announcements {
     grid-row: 1/2;
-    padding-top: 20px;
-}
+    padding: 20px 0 20px 0; 
+} */
 
-.maincontent .rightside .trending {
+/* .maincontent .rightside .trending {
     grid-row: 3/4;
-}
+} */
 
 
 /* SIDEBAR */
@@ -117,13 +142,6 @@ button {
     height:20px;
     padding: 0 5px;
 }
-
-.announcementsBox, .trendingBox {
-    background: white;
-    
-}
-
-
 
 
 
