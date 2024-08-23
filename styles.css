@@ -64,7 +64,8 @@ button {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
     gap: 24px;
-    align-items: end;
+    height: 100%;
+    width: 100%;
     /* align-items: stretch; */
 }
 
